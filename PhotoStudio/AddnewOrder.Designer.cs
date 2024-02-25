@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ClientName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Package = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.TypeOfPackege = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.Employer = new System.Windows.Forms.ComboBox();
+            this.District = new System.Windows.Forms.TextBox();
+            this.Datetime = new System.Windows.Forms.DateTimePicker();
+            this.Time = new System.Windows.Forms.DateTimePicker();
+            this.TimeCount = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,12 +56,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Піб клієнта";
             // 
-            // textBox1
+            // ClientName
             // 
-            this.textBox1.Location = new System.Drawing.Point(217, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 1;
+            this.ClientName.Location = new System.Drawing.Point(217, 108);
+            this.ClientName.Name = "ClientName";
+            this.ClientName.Size = new System.Drawing.Size(100, 26);
+            this.ClientName.TabIndex = 1;
             // 
             // label2
             // 
@@ -80,15 +80,14 @@
             this.label3.Size = new System.Drawing.Size(110, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Пакет послуг";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // comboBox2
+            // Package
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(217, 258);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 2;
+            this.Package.FormattingEnabled = true;
+            this.Package.Location = new System.Drawing.Point(217, 258);
+            this.Package.Name = "Package";
+            this.Package.Size = new System.Drawing.Size(121, 28);
+            this.Package.TabIndex = 2;
             // 
             // label4
             // 
@@ -99,13 +98,13 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Тип послуги";
             // 
-            // comboBox3
+            // TypeOfPackege
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(217, 344);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 28);
-            this.comboBox3.TabIndex = 2;
+            this.TypeOfPackege.FormattingEnabled = true;
+            this.TypeOfPackege.Location = new System.Drawing.Point(217, 344);
+            this.TypeOfPackege.Name = "TypeOfPackege";
+            this.TypeOfPackege.Size = new System.Drawing.Size(121, 28);
+            this.TypeOfPackege.TabIndex = 2;
             // 
             // label5
             // 
@@ -130,9 +129,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(62, 602);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 20);
+            this.label7.Size = new System.Drawing.Size(136, 20);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Кількість";
+            this.label7.Text = "Кількість/години";
             // 
             // button1
             // 
@@ -153,57 +152,56 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Працівник";
             // 
-            // comboBox7
+            // Employer
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(217, 656);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(121, 28);
-            this.comboBox7.TabIndex = 2;
+            this.Employer.FormattingEnabled = true;
+            this.Employer.Location = new System.Drawing.Point(217, 656);
+            this.Employer.Name = "Employer";
+            this.Employer.Size = new System.Drawing.Size(121, 28);
+            this.Employer.TabIndex = 2;
             // 
-            // textBox2
+            // District
             // 
-            this.textBox2.Location = new System.Drawing.Point(217, 185);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 1;
+            this.District.Location = new System.Drawing.Point(217, 185);
+            this.District.Name = "District";
+            this.District.Size = new System.Drawing.Size(100, 26);
+            this.District.TabIndex = 1;
             // 
-            // domainUpDown1
+            // Datetime
             // 
-            this.domainUpDown1.Location = new System.Drawing.Point(217, 600);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(120, 26);
-            this.domainUpDown1.TabIndex = 4;
-            this.domainUpDown1.Text = "domainUpDown1";
+            this.Datetime.Location = new System.Drawing.Point(185, 450);
+            this.Datetime.Name = "Datetime";
+            this.Datetime.Size = new System.Drawing.Size(200, 26);
+            this.Datetime.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // Time
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 450);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker1.TabIndex = 5;
+            this.Time.Location = new System.Drawing.Point(185, 530);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(200, 26);
+            this.Time.TabIndex = 6;
             // 
-            // dateTimePicker2
+            // TimeCount
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(185, 530);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker2.TabIndex = 6;
+            this.TimeCount.Location = new System.Drawing.Point(217, 602);
+            this.TimeCount.Name = "TimeCount";
+            this.TimeCount.Size = new System.Drawing.Size(100, 26);
+            this.TimeCount.TabIndex = 1;
             // 
             // AddnewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 708);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.domainUpDown1);
+            this.Controls.Add(this.Time);
+            this.Controls.Add(this.Datetime);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Employer);
+            this.Controls.Add(this.TypeOfPackege);
+            this.Controls.Add(this.Package);
+            this.Controls.Add(this.TimeCount);
+            this.Controls.Add(this.District);
+            this.Controls.Add(this.ClientName);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -222,21 +220,21 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ClientName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox Package;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox TypeOfPackege;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.ComboBox Employer;
+        private System.Windows.Forms.TextBox District;
+        private System.Windows.Forms.DateTimePicker Datetime;
+        private System.Windows.Forms.DateTimePicker Time;
+        private System.Windows.Forms.TextBox TimeCount;
     }
 }

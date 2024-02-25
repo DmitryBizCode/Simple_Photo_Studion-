@@ -24,7 +24,8 @@ namespace PhotoStudio
 
         private void ADD_Click(object sender, EventArgs e)
         {
-
+            AddnewOrder widgetadd = new AddnewOrder(true);
+            widgetadd.ShowDialog();
         }
 
         private void ServiceForm_Click(object sender, EventArgs e)
@@ -40,6 +41,10 @@ namespace PhotoStudio
         }
 
         private void Delete_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void AddGrid(Tuple <string, string, string, string, string, string, string, string> additem)
         {
 
         }
