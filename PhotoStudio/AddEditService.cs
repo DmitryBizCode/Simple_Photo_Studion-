@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,15 +17,16 @@ namespace PhotoStudio
     {
         private readonly Services mainForm;
         private readonly float prices;
-        private readonly int id;
+        private readonly string id;
         private readonly string serviceName;
 
         public AddEditService()
         {
             InitializeComponent();
         }
-        public AddEditService(Services form, float price, int serviceId, string name)
+        public AddEditService(Services form, float price, string name, string serviceId)
         {
+            InitializeComponent();
             this.mainForm = form;
             this.prices = price;
             this.id = serviceId;
@@ -33,7 +35,8 @@ namespace PhotoStudio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Додайте код для обробки натискання кнопки
+            mainForm.UpdateGrid(serviceName, prices, id);
+            Close();
         }
     }
 

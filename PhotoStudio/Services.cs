@@ -54,18 +54,18 @@ namespace PhotoStudio
                 MessageBox.Show("Please select a row to delete.");
             }
         }
-        public void UpdateGrid(string typename, float price, string package, string date, string time, string countOfTime, string employee)
+        public void UpdateGrid(string typename, float price, string str0)
         {
             int rowIndex1 = -1;
             foreach (DataGridViewRow row in dataGridView1.Rows)
-                if (row.Cells[0].Value != null && Convert.ToInt32(row.Cells[0].Value) == rowIndex)
+                if (row.Cells[0].Value != null && (row.Cells[0].Value).ToString() == str0)
                     rowIndex1 = row.Index;
             if (rowIndex1 == -1)
             {
                 MessageBox.Show($"Рядок не знайдено");
                 return;
             }
-            dataGridView1.Rows[rowIndex1].SetValues(rowIndex, customer, package, date, time, districtname, countOfTime, employee, CalculateSumOrder(employee, package, countOfTime));
+            dataGridView1.Rows[rowIndex1].SetValues(str0, typename, price, 1);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace PhotoStudio
                 DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
 
                 float price = (float)selectedRow.Cells[2].Value;
-                string str0 = selectedRow.Cells[1].Value.ToString();
+                string str0 = selectedRow.Cells[0].Value.ToString();
 
                 string typename = selectedRow.Cells[1].Value.ToString();
                 AddEditService editDialog = new AddEditService(this, price, typename, str0);
