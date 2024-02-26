@@ -20,8 +20,8 @@ namespace PhotoStudio
 
             StaticData.Package.Add("Фотосесія", 1000);
             StaticData.PackageList.Add("Фотосесія");
-            StaticData.Package.Add("Друк фотограій", 150);
-            StaticData.PackageList.Add("Друк фотограій");
+            StaticData.Package.Add("Друк фотографій", 150);
+            StaticData.PackageList.Add("Друк фотографій");
 
             StaticData.Employee.Add("Терещенко В.О.", 1);
             StaticData.EmployeeList.Add("Терещенко В.О.");

@@ -126,7 +126,7 @@ namespace PhotoStudio
                     result ++;
             return result;
         }
-        private float CalculateSummClear(int count, float summ) => summ - (count * (summ * 0.4f) * StaticData.EmployeeList.Count);
+        private float CalculateSummClear(int count, float summ) => summ - (count * (summ * 0.1f) * StaticData.EmployeeList.Count);
         
         private void звітністьToolStripMenuItem_Click(object sender, EventArgs e)
         {
