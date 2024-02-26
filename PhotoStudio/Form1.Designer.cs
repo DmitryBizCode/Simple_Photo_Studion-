@@ -31,7 +31,6 @@
             System.Windows.Forms.Button ADD;
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ServiceForm = new System.Windows.Forms.ToolStripMenuItem();
-            this.qwertyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGrid = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,8 +63,7 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ServiceForm,
-            this.qwertyToolStripMenuItem});
+            this.ServiceForm});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -79,12 +77,6 @@
             this.ServiceForm.Size = new System.Drawing.Size(66, 22);
             this.ServiceForm.Text = "Послуги";
             this.ServiceForm.Click += new System.EventHandler(this.ServiceForm_Click);
-            // 
-            // qwertyToolStripMenuItem
-            // 
-            this.qwertyToolStripMenuItem.Name = "qwertyToolStripMenuItem";
-            this.qwertyToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
-            this.qwertyToolStripMenuItem.Text = "qwerty";
             // 
             // dataGrid
             // 
@@ -106,7 +98,6 @@
             this.dataGrid.RowTemplate.Height = 28;
             this.dataGrid.Size = new System.Drawing.Size(1069, 307);
             this.dataGrid.TabIndex = 1;
-            this.dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -218,7 +209,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ServiceForm;
-        private System.Windows.Forms.ToolStripMenuItem qwertyToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGrid;
         private System.Windows.Forms.Button Edit;
         private System.Windows.Forms.Button Delete;

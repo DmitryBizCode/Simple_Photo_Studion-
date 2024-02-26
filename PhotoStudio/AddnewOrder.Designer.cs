@@ -39,8 +39,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.District = new System.Windows.Forms.TextBox();
             this.TimeCount = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Package = new System.Windows.Forms.ComboBox();
             this.Employee = new System.Windows.Forms.ComboBox();
             this.Time = new System.Windows.Forms.DateTimePicker();
@@ -62,7 +60,7 @@
             this.ClientName.Location = new System.Drawing.Point(145, 70);
             this.ClientName.Margin = new System.Windows.Forms.Padding(2);
             this.ClientName.Name = "ClientName";
-            this.ClientName.Size = new System.Drawing.Size(68, 20);
+            this.ClientName.Size = new System.Drawing.Size(111, 20);
             this.ClientName.TabIndex = 1;
             // 
             // label2
@@ -141,7 +139,7 @@
             this.District.Location = new System.Drawing.Point(145, 120);
             this.District.Margin = new System.Windows.Forms.Padding(2);
             this.District.Name = "District";
-            this.District.Size = new System.Drawing.Size(68, 20);
+            this.District.Size = new System.Drawing.Size(111, 20);
             this.District.TabIndex = 1;
             // 
             // TimeCount
@@ -152,29 +150,13 @@
             this.TimeCount.Size = new System.Drawing.Size(68, 20);
             this.TimeCount.TabIndex = 1;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(281, 250);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(68, 20);
-            this.textBox3.TabIndex = 1;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(281, 302);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(68, 20);
-            this.textBox4.TabIndex = 1;
-            // 
             // Package
             // 
             this.Package.FormattingEnabled = true;
             this.Package.Location = new System.Drawing.Point(145, 168);
             this.Package.Margin = new System.Windows.Forms.Padding(2);
             this.Package.Name = "Package";
-            this.Package.Size = new System.Drawing.Size(82, 21);
+            this.Package.Size = new System.Drawing.Size(124, 21);
             this.Package.TabIndex = 2;
             // 
             // Employee
@@ -183,7 +165,7 @@
             this.Employee.Location = new System.Drawing.Point(143, 384);
             this.Employee.Margin = new System.Windows.Forms.Padding(2);
             this.Employee.Name = "Employee";
-            this.Employee.Size = new System.Drawing.Size(82, 21);
+            this.Employee.Size = new System.Drawing.Size(126, 21);
             this.Employee.TabIndex = 2;
             // 
             // Time
@@ -213,8 +195,6 @@
             this.Controls.Add(this.Employee);
             this.Controls.Add(this.Package);
             this.Controls.Add(this.TimeCount);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.District);
             this.Controls.Add(this.ClientName);
             this.Controls.Add(this.label8);
@@ -245,8 +225,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox District;
         private System.Windows.Forms.TextBox TimeCount;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox Package;
         private System.Windows.Forms.ComboBox Employee;
         private System.Windows.Forms.DateTimePicker Time;

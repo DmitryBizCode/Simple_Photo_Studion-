@@ -16,15 +16,12 @@ namespace PhotoStudio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            StaticData.Package.Add("Фотосесія", 1000);
-            StaticData.PackageList.Add("Фотосесія");
-            StaticData.Package.Add("Друк", 200);
-            StaticData.PackageList.Add("Друк");
 
 
-            StaticData.Employee.Add("Терещенко В.О.", 500);
+
+            StaticData.Employee.Add("Терещенко В.О.", 1);
             StaticData.EmployeeList.Add("Терещенко В.О.");
-            StaticData.Employee.Add("Шевченко Н.А.", 600);
+            StaticData.Employee.Add("Шевченко Н.А.", 2);
             StaticData.EmployeeList.Add("Шевченко Н.А.");
 
             StaticData.ClassEmployee.Add(1, 1.4f);
