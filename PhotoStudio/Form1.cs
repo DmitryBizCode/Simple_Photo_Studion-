@@ -46,7 +46,7 @@ namespace PhotoStudio
             }
             else
             {
-                MessageBox.Show("Please select a row to edit.");
+                MessageBox.Show("Будь ласка виберіть рядок для редагування");
             }
         }
 
@@ -62,7 +62,7 @@ namespace PhotoStudio
             }
             else
             {
-                MessageBox.Show("Please select a row to delete.");
+                MessageBox.Show("Будь ласка виберіть рядок для видалення");
             }
         }
 
@@ -102,6 +102,38 @@ namespace PhotoStudio
             var Form = new Services(this);
             Form.Show();
             this.Hide();
+        }
+
+        private void PersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var employeeForm = new EmployeeForm(this);
+            employeeForm.Show();
+            this.Hide();
+        }
+        private float CalculateSumm()
+        {
+            float result = 0;
+            foreach (DataGridViewRow row in dataGrid.Rows)
+                if (row.Cells[8].Value != null)
+                    result += Convert.ToInt32(row.Cells[8].Value);
+            return result;
+        }
+        private int CalculateCountSumm()
+        {
+            int result = 0;
+            foreach (DataGridViewRow row in dataGrid.Rows)
+                if (row.Cells[8].Value != null)
+                    result ++;
+            return result;
+        }
+        private float CalculateSummClear(int count, float summ) => summ - (count * (summ * 0.4f) * StaticData.EmployeeList.Count);
+        
+        private void звітністьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            float summ = CalculateSumm();   
+            int count = CalculateCountSumm();   
+            var rep = new Reports(summ, CalculateSummClear(count, summ), count);
+            rep.ShowDialog();
         }
     }
 }

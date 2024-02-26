@@ -51,7 +51,7 @@ namespace PhotoStudio
             }
             else
             {
-                MessageBox.Show("Please select a row to delete.");
+                MessageBox.Show("Будь ласка виберіть рядок для видалення");
             }
         }
         public void UpdateGrid(string typename, float price, string str0)
@@ -83,19 +83,26 @@ namespace PhotoStudio
             }
             else
             {
-                MessageBox.Show("Please select a row to edit.");
+                MessageBox.Show("Будь ласка виберіть рядок для редагування");
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            foreach (DataGridViewRow row in dataGridView1.Rows)            
+                if (row.Cells[1].Value != null && row.Cells[1].Value.ToString() == textBox1.Text)
+                {
+                    MessageBox.Show($"{textBox1.Text} має ціну {row.Cells[2].Value} грн");
+                    return;
+                }
+            MessageBox.Show($"Послугу з назвою {textBox1.Text} не знайдений.");
         }
+
 
         private void OrderForms_Click(object sender, EventArgs e)
         {
             mainForm.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

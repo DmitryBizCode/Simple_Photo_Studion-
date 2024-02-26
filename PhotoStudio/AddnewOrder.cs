@@ -34,7 +34,13 @@ namespace PhotoStudio
         public AddnewOrder(bool isAddMode, Form1 form, int orderId, string customer, string districtname, string package, string date, string time, string countOfTime, string employee)
        : this(isAddMode, form)
         {
-            InitializeComponent();
+            Time.Format = DateTimePickerFormat.Custom;
+            Time.CustomFormat = "HH:mm";
+            Time.ShowUpDown = true;
+            this.isAddMode = isAddMode;
+            Datetime.ShowUpDown = true;
+            Datetime.CustomFormat = "dd.MM.yyyy";
+            Datetime.Format = DateTimePickerFormat.Custom;
             this.orderId = orderId;
             ClientName.Text = customer;
             District.Text = districtname;

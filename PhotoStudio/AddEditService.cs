@@ -16,7 +16,7 @@ namespace PhotoStudio
     public partial class AddEditService : Form
     {
         private readonly Services mainForm;
-        private readonly float prices;
+        private float prices;
         private readonly string id;
         private readonly string serviceName;
 
@@ -27,6 +27,8 @@ namespace PhotoStudio
         public AddEditService(Services form, float price, string name, string serviceId)
         {
             InitializeComponent();
+            NamePac.Text = name;
+            textBox2.Text = price.ToString();
             this.mainForm = form;
             this.prices = price;
             this.id = serviceId;
@@ -35,6 +37,8 @@ namespace PhotoStudio
 
         private void button1_Click(object sender, EventArgs e)
         {
+            prices = float.Parse(textBox2.Text);
+            StaticData.Package[serviceName] = prices;
             mainForm.UpdateGrid(serviceName, prices, id);
             Close();
         }

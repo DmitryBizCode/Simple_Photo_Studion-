@@ -31,6 +31,7 @@
             System.Windows.Forms.Button ADD;
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ServiceForm = new System.Windows.Forms.ToolStripMenuItem();
+            this.персоналToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGrid = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +44,7 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
+            this.звітністьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ADD = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
@@ -63,7 +65,9 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ServiceForm});
+            this.ServiceForm,
+            this.персоналToolStripMenuItem,
+            this.звітністьToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -77,6 +81,13 @@
             this.ServiceForm.Size = new System.Drawing.Size(66, 22);
             this.ServiceForm.Text = "Послуги";
             this.ServiceForm.Click += new System.EventHandler(this.ServiceForm_Click);
+            // 
+            // персоналToolStripMenuItem
+            // 
+            this.персоналToolStripMenuItem.Name = "персоналToolStripMenuItem";
+            this.персоналToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.персоналToolStripMenuItem.Text = "Персонал";
+            this.персоналToolStripMenuItem.Click += new System.EventHandler(this.PersonalToolStripMenuItem_Click);
             // 
             // dataGrid
             // 
@@ -183,6 +194,13 @@
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
+            // звітністьToolStripMenuItem
+            // 
+            this.звітністьToolStripMenuItem.Name = "звітністьToolStripMenuItem";
+            this.звітністьToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            this.звітністьToolStripMenuItem.Text = "Звітність";
+            this.звітністьToolStripMenuItem.Click += new System.EventHandler(this.звітністьToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +239,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.ToolStripMenuItem персоналToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem звітністьToolStripMenuItem;
     }
 }
 
