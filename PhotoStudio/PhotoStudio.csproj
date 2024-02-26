@@ -66,6 +66,7 @@
     <Compile Include="Services.Designer.cs">
       <DependentUpon>Services.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaticData.cs" />
     <EmbeddedResource Include="AddnewOrder.resx">
       <DependentUpon>AddnewOrder.cs</DependentUpon>
     </EmbeddedResource>

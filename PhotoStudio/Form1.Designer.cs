@@ -51,9 +51,10 @@
             // 
             // ADD
             // 
-            ADD.Location = new System.Drawing.Point(200, 664);
+            ADD.Location = new System.Drawing.Point(133, 432);
+            ADD.Margin = new System.Windows.Forms.Padding(2);
             ADD.Name = "ADD";
-            ADD.Size = new System.Drawing.Size(230, 45);
+            ADD.Size = new System.Drawing.Size(153, 29);
             ADD.TabIndex = 2;
             ADD.Text = "Додати Замовлення ";
             ADD.UseVisualStyleBackColor = true;
@@ -61,33 +62,32 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ServiceForm,
             this.qwertyToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1603, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(1071, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // ServiceForm
             // 
             this.ServiceForm.Name = "ServiceForm";
-            this.ServiceForm.Size = new System.Drawing.Size(95, 29);
+            this.ServiceForm.Size = new System.Drawing.Size(66, 22);
             this.ServiceForm.Text = "Послуги";
             this.ServiceForm.Click += new System.EventHandler(this.ServiceForm_Click);
             // 
             // qwertyToolStripMenuItem
             // 
             this.qwertyToolStripMenuItem.Name = "qwertyToolStripMenuItem";
-            this.qwertyToolStripMenuItem.Size = new System.Drawing.Size(82, 29);
+            this.qwertyToolStripMenuItem.Size = new System.Drawing.Size(55, 22);
             this.qwertyToolStripMenuItem.Text = "qwerty";
             // 
             // dataGrid
             // 
-            this.dataGrid.AllowUserToOrderColumns = true;
             this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -99,11 +99,12 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dataGrid.Location = new System.Drawing.Point(0, 119);
+            this.dataGrid.Location = new System.Drawing.Point(0, 77);
+            this.dataGrid.Margin = new System.Windows.Forms.Padding(2);
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.RowHeadersWidth = 62;
             this.dataGrid.RowTemplate.Height = 28;
-            this.dataGrid.Size = new System.Drawing.Size(1603, 473);
+            this.dataGrid.Size = new System.Drawing.Size(1069, 307);
             this.dataGrid.TabIndex = 1;
             this.dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -112,28 +113,27 @@
             this.Column1.HeaderText = "Номер";
             this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 80;
+            this.Column1.Width = 50;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "ПІБ клієнта";
             this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 290;
+            this.Column2.Width = 150;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Послуга";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 200;
+            this.Column3.Width = 150;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Дата";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
             // 
             // Column5
             // 
@@ -147,7 +147,7 @@
             this.Column6.HeaderText = "Місце";
             this.Column6.MinimumWidth = 8;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 200;
+            this.Column6.Width = 150;
             // 
             // Column7
             // 
@@ -161,20 +161,21 @@
             this.Column8.HeaderText = "ПІБ працівника";
             this.Column8.MinimumWidth = 8;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 290;
+            this.Column8.Width = 150;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "Ціна(грн)";
             this.Column9.MinimumWidth = 8;
             this.Column9.Name = "Column9";
-            this.Column9.Width = 155;
+            this.Column9.Width = 85;
             // 
             // Edit
             // 
-            this.Edit.Location = new System.Drawing.Point(641, 664);
+            this.Edit.Location = new System.Drawing.Point(427, 432);
+            this.Edit.Margin = new System.Windows.Forms.Padding(2);
             this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(256, 45);
+            this.Edit.Size = new System.Drawing.Size(171, 29);
             this.Edit.TabIndex = 3;
             this.Edit.Text = "Редагування замовлення";
             this.Edit.UseVisualStyleBackColor = true;
@@ -182,9 +183,10 @@
             // 
             // Delete
             // 
-            this.Delete.Location = new System.Drawing.Point(1158, 664);
+            this.Delete.Location = new System.Drawing.Point(772, 432);
+            this.Delete.Margin = new System.Windows.Forms.Padding(2);
             this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(272, 45);
+            this.Delete.Size = new System.Drawing.Size(181, 29);
             this.Delete.TabIndex = 4;
             this.Delete.Text = "Видалити замовлення";
             this.Delete.UseVisualStyleBackColor = true;
@@ -192,15 +194,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1603, 774);
+            this.ClientSize = new System.Drawing.Size(1071, 503);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Edit);
             this.Controls.Add(ADD);
             this.Controls.Add(this.dataGrid);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
@@ -217,6 +220,8 @@
         private System.Windows.Forms.ToolStripMenuItem ServiceForm;
         private System.Windows.Forms.ToolStripMenuItem qwertyToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGrid;
+        private System.Windows.Forms.Button Edit;
+        private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -226,8 +231,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.Button Edit;
-        private System.Windows.Forms.Button Delete;
     }
 }
 
