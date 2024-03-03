@@ -41,7 +41,7 @@ namespace PhotoStudio
         {
             if (string.IsNullOrEmpty(textBox2.Text))
             {
-                MessageBox.Show("Введіть ПІБ для звільнення працівника");
+                MessageBox.Show("Введіть ПІБ для звільнення працівника та причину звільнення");
                 return;
             }
 
@@ -58,10 +58,13 @@ namespace PhotoStudio
                     break;
                 }
             }
-
             if (!found)
             {
                 MessageBox.Show($"Не знайдено працівника з іменем {textBox2.Text}");
+            }
+            if (found)
+            {
+                MessageBox.Show($"{textBox2.Text}звільнена(ий). Причиною звільнення стало: {KindEditBox.Text}");
             }
         }
 

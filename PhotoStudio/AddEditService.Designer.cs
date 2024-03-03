@@ -96,7 +96,7 @@
             this.Controls.Add(this.NamePac);
             this.Controls.Add(this.label5);
             this.Name = "AddEditService";
-            this.Text = "EditForm";
+            this.Text = "Фото-Студія";
             this.ResumeLayout(false);
             this.PerformLayout();
 

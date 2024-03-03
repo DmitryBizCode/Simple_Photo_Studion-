@@ -49,6 +49,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ServiceForm = new System.Windows.Forms.ToolStripMenuItem();
+            this.label6 = new System.Windows.Forms.Label();
+            this.KindEditBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -116,13 +118,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.KindEditBox);
             this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox2.Location = new System.Drawing.Point(12, 252);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(323, 143);
+            this.groupBox2.Size = new System.Drawing.Size(323, 165);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Звільнити працівника";
@@ -136,7 +140,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(95, 95);
+            this.button2.Location = new System.Drawing.Point(91, 129);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 31);
@@ -254,6 +258,22 @@
             this.ServiceForm.Text = "Замовлення";
             this.ServiceForm.Click += new System.EventHandler(this.ServiceForm_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 24);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Причина";
+            // 
+            // KindEditBox
+            // 
+            this.KindEditBox.Location = new System.Drawing.Point(99, 74);
+            this.KindEditBox.Name = "KindEditBox";
+            this.KindEditBox.Size = new System.Drawing.Size(213, 29);
+            this.KindEditBox.TabIndex = 1;
+            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,7 +285,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "EmployeeForm";
-            this.Text = "EmployeeForm";
+            this.Text = "Фото-Студія";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -303,5 +323,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ServiceForm;
+        private System.Windows.Forms.TextBox KindEditBox;
+        private System.Windows.Forms.Label label6;
     }
 }
